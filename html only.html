@@ -1,54 +1,30 @@
+# Display and Download PDF
+
+This HTML code snippet demonstrates how to embed a PDF on a webpage and provide a download option.
+
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Profile</title>
+    <title>Display and Download PDF</title>
 </head>
 <body>
-    <center><img src="content://com.android.providers.media.documents/document/image%3A5736"style="height:100px; width:80px;"></center>
-    <header>
-        <center><h1>Welcome to My Profile</h1></center>
-    </header>    
+    <h1>PDF Viewer with Download Option</h1>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! I'm Azhagaperumal, a college student with a passion for web development and a dream to build an app that is useful to everyone.</p>
-        </section>
+    <!-- Embed the PDF on the webpage -->
+    <iframe 
+        src="https://github.com/Azhaga1802/TNSDCCERTIFICATE/blob/main/Azhagaperumal%20TNSDC%20certificate.pdf" 
+        width="100%" 
+        height="500px">
+    </iframe>
 
-        <section>
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Web Development</li>
-                <li>Travel</li>
-                <li>Fitness</li>
-                <li>Reading Self-Help Books</li>
-            </ul>
-        </section>
+    <h2>Download PDF</h2>
 
-        <section>
-            <h2>Contact Information</h2>
-            <p>Email: azhaga@example.com</p>
-        </section>
-    </main>
-    <h2>Contact me</h2>
-    <form>
-        <label for="fname">Name:</label>
-        <input type="text" id="fname" placeholder="Your Name"><br>
-        
-        <label for="lname">E-mail:</label>
-        <input type="email" id="lname" placeholder="Youremail@gmail.com"><br>
-        
-        <label for="ni">Mobile.No:</label>
-        <input type="number" ><br>
-        
-        <input type="submit">
-        
-    </form>
-
-    <footer>
-        <p>&copy; 2025 Azhaga's Profile</p>
-    </footer>
+    <!-- Provide a direct link for downloading -->
+    <a 
+        href="https://github.com/Azhaga1802/TNSDCCERTIFICATE/blob/main/Azhagaperumal%20TNSDC%20certificate.pdf" 
+        download="YourFileName.pdf">
+        <button>Download PDF</button>
+    </a>
 </body>
 </html>
